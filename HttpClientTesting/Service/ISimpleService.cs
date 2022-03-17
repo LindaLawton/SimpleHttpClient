@@ -4,6 +4,6 @@ namespace HttpClientTesting.Service
 {
     public interface ISimpleService
     {
-        Task<string> GetData();
+        Task<SimpleServiceResponse> GetDataAsync();
     }
 }

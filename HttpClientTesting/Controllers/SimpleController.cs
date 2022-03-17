@@ -21,7 +21,9 @@ namespace HttpClientTesting.Controllers
         [HttpGet]
         public async Task<string> Get()
         {
-            return await _simpleService.GetData();
+            var response = await _simpleService.GetDataAsync();
+
+            return response.ResponseDate.ToString();
         }
     }
 }
